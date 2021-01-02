@@ -16,7 +16,7 @@ jobs:
       # 이 Step은 Github이 제공하는 `hello-world-javascript-action` Action을 사용한다
       - name: Hello world
         # uses: github-action-practice/github-action-practice@main
-        uses: .github/actions/github-action-practice
+        uses: ./.github/actions/github-action-practice
         with:
           who-to-greet: 'ngwoon'
         id: hello
