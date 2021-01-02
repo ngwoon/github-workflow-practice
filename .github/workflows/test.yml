@@ -13,6 +13,9 @@ jobs:
     # 이 Job은 리눅스에서 실행된다
     runs-on: ubuntu-latest
     steps:
+      - name: check local Action
+        uses: actions/checkout@v2
+      
       # 이 Step은 Github이 제공하는 `hello-world-javascript-action` Action을 사용한다
       - name: Hello world
         # uses: github-action-practice/github-action-practice@main
